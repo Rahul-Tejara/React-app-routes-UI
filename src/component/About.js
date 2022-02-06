@@ -1,28 +1,26 @@
 import React from "react";
-import d from "../";
-
-/**
- * Simple about page (no navigation inside)
- */
+import about from "../../assets/img/about.png";
+import cloud from "../../assets/img/cloud-download.svg";
+import heart from "../../assets/img/heart-outline.svg";
 
 export default function About() {
   return (
     // <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-md-6 col-lg-6">
-            <div class="about_img">
-              <img src="../assets/img/about.png" />
+    <section id="about" className="about">
+      <div className="container">
+        <div className="row">
+          <div className="col-md-12 col-md-6 col-lg-6">
+            <div className="about_img">
+              <img src={about} alt="" />
             </div>
           </div>
-          <div class="col-md-12 col-md-6 col-lg-6">
-            <div class="about_dating_content">
-              <div class="datin_small_heading">
+          <div className="col-md-12 col-md-6 col-lg-6">
+            <div className="about_dating_content">
+              <div className="datin_small_heading">
                 <p>About Dating app</p>
-                <span class="seprator"></span>
+                <span className="seprator"></span>
               </div>
-              <div class="datin_heading">
+              <div className="datin_heading">
                 <h1>
                   Love Can Happen
                   <br />
@@ -36,22 +34,22 @@ export default function About() {
                   the area, so we really do have somebody for everyone.
                 </p>
               </div>
-              <div class="download_app">
-                <div class="total_download">
-                  <span class="d-icon">
-                    <img src="assets/img/cloud-download.svg" />
+              <div className="download_app">
+                <div className="total_download">
+                  <span className="d-icon">
+                    <img src={cloud} alt="" />
                   </span>
-                  <div class="count">
+                  <div className="count">
                     <h1>105 K</h1>
                     <span>+</span>
                   </div>
                   <p>Download App</p>
                 </div>
-                <div class="total_download">
-                  <span class="d-icon">
-                    <img src="./assets/img/heart-outline.svg" />
+                <div className="total_download">
+                  <span className="d-icon">
+                    <img src={heart} alt="" />
                   </span>
-                  <div class="count">
+                  <div className="count">
                     <h1>90%</h1>
                   </div>
                   <p>Successful Relationship</p>

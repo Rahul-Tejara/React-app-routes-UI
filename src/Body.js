@@ -1,17 +1,21 @@
 import React from "react";
 import { Route, Switch } from "react-router";
-import About from "./About";
-import Blog from "./Blog";
-import Contact from "./Contact";
-import Post from "./Post";
+import Home from "./component/Home";
+import About from "./component/About";
+import Contact from "./component/Contact";
+import Review from "./component/Team";
+import Faq from "./component/Faq";
+import Services from "./component/Services";
 
 export default function Body() {
   return (
     <Switch>
-      <Route path="/" exact component={Blog} />
+      <Route path="/" exact component={Home} />
       <Route path="/about" component={About} />
       <Route path="/contact" component={Contact} />
-      <Route path="/post/:slug" component={Post} />
+      <Route path="/services" component={Services} />
+      <Route path="/faq" component={Faq} />
+      <Route path="/team" component={Review} />
     </Switch>
   );
 }
